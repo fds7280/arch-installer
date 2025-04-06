@@ -16,6 +16,7 @@ hwclock --systohc &&
 
 # nano /etc/locale.gen [en_US.UTF-8 UTF-8] 
 sed -i 's/^#\(en_US.UTF-8 UTF-8\)/\1/' /mnt/etc/locale.gen &&
+
 locale-gen &&
 
 # nano /etc/locale.conf [LANG=en_US.UTF-8]  
