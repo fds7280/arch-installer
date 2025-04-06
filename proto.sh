@@ -15,7 +15,7 @@ ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime &&
 hwclock --systohc &&
 
 # nano /etc/locale.gen [en_US.UTF-8 UTF-8] 
-sed -i 's/^#\(en_US.UTF-8 UTF-8\)/\1/' /mnt/etc/locale.gen &&
+sed -i 's/^#\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen &&
 
 locale-gen &&
 
