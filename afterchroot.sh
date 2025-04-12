@@ -22,6 +22,6 @@ passwd prin &&
 sed -i 's/^#\s*\(%wheel ALL=(ALL:ALL) ALL\)/\1/' /etc/sudoers
 
 systemctl enable NetworkManager &&
-grub-install /dev/sda &&
+grub-install /dev/vda &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 umount -a 
