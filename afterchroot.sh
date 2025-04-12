@@ -15,8 +15,8 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf &&
 echo "archlinux" >> /etc/hostname &&
 
 passwd &&
-useradd -m -G wheel -s /bin/bash prin &&
-passwd prin &&
+useradd -m -G wheel -s /bin/bash prod &&
+passwd prod &&
 
 # EDITOR=nano visudo [wheel all=(all) nopasswd: all]  
 sed -i 's/^#\s*\(%wheel ALL=(ALL:ALL) ALL\)/\1/' /etc/sudoers
