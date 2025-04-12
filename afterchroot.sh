@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arch-chroot /mnt &&
+
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime &&
 hwclock --systohc &&
 
