@@ -9,8 +9,7 @@ mount /dev/vda1 /mnt/boot/efi &&
 swapon /dev/vda2 &&
 pacstrap /mnt base linux-lts linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager sudo &&
 genfstab /mnt &&
-genfstab /mnt > /mnt/etc/fstab &&
-
+genfstab /mnt > /mnt/etc/fstab 
 
 
 
