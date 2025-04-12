@@ -15,13 +15,13 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf &&
 echo "archlinux" >> /etc/hostname &&
 
 passwd &&
-useradd -m -G wheel -s /bin/bash prod &&
-passwd prod &&
+useradd -m -G wheel -s /bin/bash bear &&
+passwd bear &&
 
 # EDITOR=nano visudo [wheel all=(all) nopasswd: all]  
 sed -i 's/^#\s*\(%wheel ALL=(ALL:ALL) ALL\)/\1/' /etc/sudoers
 
 systemctl enable NetworkManager &&
-grub-install /dev/vda &&
+grub-install /dev/sda &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 umount -a 
