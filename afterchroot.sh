@@ -19,7 +19,7 @@ useradd -m -G wheel -s /bin/bash prin &&
 passwd prin &&
 
 # EDITOR=nano visudo [wheel all=(all) nopasswd: all]  
-sed -i 's/^#\(%wheel ALL=(ALL:ALL) ALL)/\1/' /etc/sudoers &&
+sed -i 's/^#\s*\(%wheel ALL=(ALL:ALL) ALL\)/\1/' /etc/sudoers
 
 systemctl enable NetworkManager &&
 grub-install /dev/sda &&
