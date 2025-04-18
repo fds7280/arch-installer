@@ -25,3 +25,4 @@ systemctl enable NetworkManager &&
 grub-install /dev/sda &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 umount -a 
+reboot
